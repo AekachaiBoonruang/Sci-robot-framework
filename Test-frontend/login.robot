@@ -5,5 +5,5 @@ Test Teardown   close all browsers
 *** Test Cases ***
 EmailLogin : User login invalid passoword should Fail
   [Tags]  Regression
-  Login Facebook  ${email_ogin}  ${password_login}  รหัสผ่านที่คุณป้อนไม่ถุกต้อง ลืมรหัสผ่าน?
+  Login Facebook  ${email_ogin}  ${password_login}  The password that you've entered is incorrect. Forgotten password?
   Capture Page Screenshot  Login_Invalid_Password.png
