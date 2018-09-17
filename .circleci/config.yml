@@ -53,7 +53,7 @@ jobs:
           name: Testing Login (Backend)
           command: |
             . venv/bin/activate
-            pybot -c Regression -d Results Tests_Backend/login_admin.robot
+            pybot -c Regression -d Results Tests-frontend
 
       - store_test_results:
           path: Results
