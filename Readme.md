@@ -1,4 +1,4 @@
-### Robot Framework Script : [![CircleCI](https://circleci.com/gh/AekachaiBoonruang/Sci-robot-framework.svg?style=svg)](https://circleci.com/gh/AekachaiBoonruang/Sci-robot-framework)
+### Robot Framework Script : [![CircleCI](https://circleci.com/gh/AekachaiBoonruang/Template-robot-framework.svg?style=svg)](https://circleci.com/gh/AekachaiBoonruang/Template-robot-framework)
 
 ### Environment ที่ใช้เขียน Script
 ```
