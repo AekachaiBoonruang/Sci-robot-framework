@@ -55,8 +55,9 @@ jobs:
             . venv/bin/activate
             pybot -c Regression -d Results Test-frontend
 
-      - store_test_results:
-          path: Results
       - store_artifacts:
           path: Results
           destination: report-test
+
+      - store_test_results:
+          path: Results
