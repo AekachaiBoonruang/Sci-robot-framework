@@ -60,4 +60,4 @@ jobs:
           destination: report-test
 
       - store_test_results:
-          path: Results
+          path: report-test
