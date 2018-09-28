@@ -57,7 +57,7 @@ jobs:
 
       - store_artifacts:
           path: Results
-          destination: report-test
+          # destination: report-test
 
       - store_test_results:
-          path: report-test
+          path: Results
