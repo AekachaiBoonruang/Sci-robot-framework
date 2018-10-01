@@ -64,17 +64,17 @@ jobs:
 
 workflows:
   version: 2
-    commit-workflow:
-      jobs:
-        - build 
-    scheduled-workflow:
-      triggers:
-        - schedule:
-            cron: "3 * * * *"
-            filters:
-              branches:
-                only: master
-
-      jobs:
-        - build
+  commit:
+    jobs:
+      - build
+  nightly:
+    triggers:
+      - schedule:
+          cron: "2 * * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
 
