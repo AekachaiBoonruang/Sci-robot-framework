@@ -64,10 +64,13 @@ jobs:
 
 workflows:
   version: 2
+  commit:
+    jobs:
+      - build
   nightly:
     triggers:
       - schedule:
-          cron: "2 * * * *"
+          cron: "*/5 * * * *"
           filters:
             branches:
               only:
