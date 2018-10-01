@@ -62,18 +62,17 @@ jobs:
       - store_test_results:
           path: Results
 
-workflows:
-  version: 2
-  commit:
+version: 2
+  commit-workflow:
     jobs:
-      - build
-  nightly:
+      - build 
+  scheduled-workflow:
     triggers:
       - schedule:
-          cron: "2 * * * *"
+          cron: "3 * * * *"
           filters:
             branches:
-              only:
-                - master
+              only: master
+
     jobs:
       - build
