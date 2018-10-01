@@ -62,9 +62,7 @@ jobs:
       - store_test_results:
           path: Results
 
-workflows:
-   version: 2
-   nightly:
+nightly:
      triggers:
        - schedule:
            cron: "3 * * * *"
