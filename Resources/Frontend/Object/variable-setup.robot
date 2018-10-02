@@ -10,7 +10,7 @@
 ${url_host}    https://www.facebook.com
 
 #setup
-${browser}    ff
+${browser}    gc
 ${speed_test}   0.5
 
 #capture page
